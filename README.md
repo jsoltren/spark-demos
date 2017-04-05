@@ -6,6 +6,7 @@ at least partially functional. Not intended to be an exhaustive test,
 many of these samples are unremarkable.
 
 Sample usage:
+
     $ sbt package
     $  path/to/spark-submit \
         --class "org.soltren.spark.examples.ShuffleGroupCount" \
