@@ -8,7 +8,7 @@ many of these samples are unremarkable.
 Sample usage:
 
     $ sbt package
-    $  path/to/spark-submit \
+    $ path/to/spark-submit \
         --class "org.soltren.spark.examples.ShuffleGroupCount" \
         --master local[4] \
         ./target/scala-2.11/spark-demos-by-jsoltren_2.11-0.1.jar
