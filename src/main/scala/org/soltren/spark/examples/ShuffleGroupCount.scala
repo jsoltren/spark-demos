@@ -7,7 +7,7 @@ package org.soltren.spark.examples
 import org.apache.spark.{SparkConf, SparkContext}
 
 object ShuffleGroupCount {
-  def main(): Long = {
+  def main(args: Array[String]): Unit = {
     val countMax = 1e6
 
     val conf = new SparkConf().setAppName("ShuffleGroupCount")
@@ -20,6 +20,6 @@ object ShuffleGroupCount {
 
     val sumMeans: Long = means.values.reduce((x,y) => (x + y))
 
-    sumMeans
+    println("Output of ShuffleGroupCount is " + sumMeans)
   }
 }
