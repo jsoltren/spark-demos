@@ -21,5 +21,7 @@ object ShuffleGroupCount {
     val sumMeans: Long = means.values.reduce((x,y) => (x + y))
 
     println("Output of ShuffleGroupCount is " + sumMeans)
+
+    Thread sleep 60000
   }
 }
